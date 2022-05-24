@@ -13,37 +13,69 @@ Here, we will use novoSpaRc to spatially reconstruct a single-cell dataset from 
 {% capture text %} [1] Park, J. et al. Single-cell transcriptomics of the mouse kidney reveals potential cellular targets of kidney disease. Science 360, 758–763 (2018).
 {% include card.html header="Overview" text=text %}
 
+## Pseudocode script for basic de novo reconstruction
 
+Import the required libraries
 
-## Basic Configuration
+```
+# imports
+%matplotlib inline
+import novosparc
 
-Edit the "_config.yml" to get your workshop website set up with the basics such as `title` and `author`.
-Check comments (denoted by `#` in YAML) in the file for all the options!
+import os
+import numpy as np
+import pandas as pd
+import random
+import scanpy as sc
+import matplotlib.pyplot as plt
+import altair as alt
+from scipy.spatial.distance import cdist, squareform, pdist
+```
 
-Once you have edited the "_config.yml", you are ready to start editing your content pages.
-All your content is written in Markdown in the "content" folder.
-See [Create Lesson Content]({{ '/content/3-lesson.html' | relative_url }}) for details and options.
+### Reading gene expression data
+```
+Read the single-cell gene expression matrix and the list of gene names from disk.
+```
 
-## Style customization [optional]
+### Preprocess the data and subset cell number
+```
+Normalize the data by using scanpy
+```
 
-The file "assets/css/custom.scss" exposes variables that can customize the basic style of website:
+To get quickly setup our script, we subset our dataset to 3,000 cells. Make sure you use the following seed for reproducible results
 
-- `$top-border` adds a tiny splash of color on the header and footer borders. Try tweaking the color using an [HTML # value](https://www.w3schools.com/colors/colors_picker.asp).
-- `$text-color` sets the body text color
-- `$link-color` sets link color
-- `$base-font-size` sets the body text size
-- `$container-max` sets a maximum width for the text body--keeping it narrow can make it easier to read, but gives less screen space!
+```
+random.seed(2022)
+Subset dataset to 3000 cells
+```
 
-To use the Bootstrap defaults for *any* of these values, comment out the variable in "custom.scss", using `//` in front of the option's line (e.g. `// $text-color: #111 !default;` ).
+### Create a target space
+#### First use the provided target space that was used in the paper
+```
+Read target space from disk
+Subset target space to 2,000 locations
+```
 
-To add your own custom CSS, use the file "_sass/_custom.scss".
-Any CSS/SASS you add to this file will override the template and Bootstrap classes.
+#### Alternatively (for task 3): create a new target space
+```
+Use the provided script to generate a target space of any country
+```
 
-## Add Optional Analytics [optional]
+### Reconstruct the tissue
+```
+Construct Tissue object
+Compute cost matrices
+Compute OT of cells to locations for alpha=0
+```
 
-To use Google Analytics, add your analytics id to "_config.yml" in `google-analytics-id:` (if `google-analytics-id` is blank, the GA code will not added).
-To use an alternative analytics, paste the code snippet provided by the platform into the file "_includes/template/analytics.html".
+### Validate reconstruction for different kidney compartments
 
-The analytics code will only be added when using "production" environment. 
-This happens automatically on GitHub Pages. 
-To build manually you need to add "JEKYLL_ENV", like: `JEKYLL_ENV=production jekyll build`.
+## Task 1: explore influence of number of locations
+For the same set of 5,000 cells (use same random seed) run 5 reconstructions with different number of locations. How robust are the resulting reconstruction?.
+
+## Task 2: explore influence of number of cells
+For a fixed target space perform 5 reconstructions with different number of cells. How is running time affected? How robust are the resulting reconstructions?
+
+## Task 3: explore different target spaces
+Setup different target spaces and explore the reconstructions. How are these affected from the shape of the target space? How robust are the reconstructions?
+
