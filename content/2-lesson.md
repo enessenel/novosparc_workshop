@@ -1,7 +1,7 @@
 ---
-title: Datasets
-nav: Datasets
-topics: Datasets
+title: Kidney Dataset
+nav: Kidney
+topics: Kidney
 ---
 
 In this workshop, we will use two different datasets to explore novoSpaRc.
