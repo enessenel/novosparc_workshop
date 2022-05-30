@@ -1,10 +1,8 @@
 ---
 title: Kidney Dataset
 nav: Kidney
-topics: Kidney
+topics: Kidney, Reconstruction, de-novo
 ---
-
-In this workshop, we will use two different datasets to explore novoSpaRc.
 
 ## Kidney Dataset
 
@@ -12,6 +10,18 @@ Here, we will use novoSpaRc to spatially reconstruct a single-cell dataset from 
 
 {% capture text %} [1] Park, J. et al. Single-cell transcriptomics of the mouse kidney reveals potential cellular targets of kidney disease. Science 360, 758–763 (2018). {% endcapture %}
 {% include card.html header="Overview" text=text %}
+
+## Download the data
+{% capture text %} You can download the data from the following link:
+[Download Kidney Dataset](https://gigamove.rwth-aachen.de/en/download/60d8b33b09c0cc4da07783830380771d)
+
+The dataset consists of three files:
+- dge_normalized.txt => this is the digital gene expression file
+- gene_names.txt => names of the genes
+- hvg_839.txt => names of the highly variable genes that can be used in the processing
+{% endcapture %}
+{% include card.html header="Overview" text=text %}
+
 
 ## Pseudocode script for basic de novo reconstruction
 
