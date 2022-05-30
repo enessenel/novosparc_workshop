@@ -9,18 +9,22 @@ topics: Kidney, Reconstruction, de-novo
 Here, we will use novoSpaRc to spatially reconstruct a single-cell dataset from whole kidney [1], which is a complex tissue with stereotypical organization. Since there is no reference atlas of gene expression, the reconstruction will performed de novo. 
 
 {% capture text %} [1] Park, J. et al. Single-cell transcriptomics of the mouse kidney reveals potential cellular targets of kidney disease. Science 360, 758–763 (2018). {% endcapture %}
-{% include card.html header="Overview" text=text %}
+{% include card.html header="Original Publication" text=text %}
 
 ## Download the data
+
 {% capture text %} You can download the data from the following link:
 [Download Kidney Dataset](https://gigamove.rwth-aachen.de/en/download/60d8b33b09c0cc4da07783830380771d)
+{% endcapture %}
+{% include card.html header="Data Download" text=text %}
 
+{% capture text %}
 The dataset consists of three files:
 - dge_normalized.txt => this is the digital gene expression file
 - gene_names.txt => names of the genes
 - hvg_839.txt => names of the highly variable genes that can be used in the processing
 {% endcapture %}
-{% include card.html header="Overview" text=text %}
+{% include card.html header="Data Description" text=text %}
 
 
 ## Pseudocode script for basic de novo reconstruction
@@ -88,4 +92,3 @@ For a fixed target space perform 5 reconstructions with different number of cell
 
 ## Task 3: explore different target spaces
 Setup different target spaces and explore the reconstructions. How are these affected from the shape of the target space? How robust are the reconstructions?
-
