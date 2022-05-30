@@ -1,16 +1,27 @@
 ---
 title: BDTNP
 nav: BDTNP
-topics: Content; Markdown; Includes
-description: >
-    This text is a "section description". Below is "section topics", followed by an example section video embed. This page details how to write content pages and add interest with includes.
-youtubeid: moJgWrD6dwg
+topics: Drosophila, Reconstruction, atlas
 ---
-
-## The BDTNP Dataset
 
 Here, we will use novoSpaRc to spatially reconstruct the early Drdosophila embryo dataset [1], which is a whole organism tissue with stereotypical organization. Since a reference atlas of gene expression is provided, the reconstruction will performed with marker genes. 
 
+{% capture text %} [1] Park, J. et al. Single-cell transcriptomics of the mouse kidney reveals potential cellular targets of kidney disease. Science 360, 758–763 (2018). {% endcapture %}
+{% include card.html header="Original Publication" text=text %}
+
+## The Data
+
+{% capture text %} You can download the data from the following link:
+[BDTNP Dataset](https://gigamove.rwth-aachen.de/en/download/7a1829c1a7eb0a11b8d78075ccd12bbf)
+{% endcapture %}
+{% include card.html header="Data Download" text=text %}
+
+{% capture text %}
+The dataset consists of three files:
+- dge.txt => this is the digital gene expression file
+- geometry.txt => location coordinates
+{% endcapture %}
+{% include card.html header="Data Description" text=text %}
 
 ## Pseudocode script for basic reconstruction with marker genes
 

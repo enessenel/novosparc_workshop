@@ -4,14 +4,12 @@ nav: Kidney
 topics: Kidney, Reconstruction, de-novo
 ---
 
-## Kidney Dataset
-
 Here, we will use novoSpaRc to spatially reconstruct a single-cell dataset from whole kidney [1], which is a complex tissue with stereotypical organization. Since there is no reference atlas of gene expression, the reconstruction will performed de novo. 
 
 {% capture text %} [1] Park, J. et al. Single-cell transcriptomics of the mouse kidney reveals potential cellular targets of kidney disease. Science 360, 758–763 (2018). {% endcapture %}
 {% include card.html header="Original Publication" text=text %}
 
-## Download the data
+## The Data
 
 {% capture text %} You can download the data from the following link:
 [Download Kidney Dataset](https://gigamove.rwth-aachen.de/en/download/60d8b33b09c0cc4da07783830380771d)
