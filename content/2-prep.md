@@ -21,18 +21,13 @@ Conda is a python package manager that facilitates reproducibility of data analy
 
 After having installed `conda`, create a new environment by typing `conda create -n novosparc python=3.9`. Then activate the environment with `conda activate novosparc` and try to install `novosparc` from `pip` by typing `pip install novosparc`. This should install the packages and all dependencies.
 
+## Install Jupyter
+`conda install -c anaconda jupyter` and you can start the notebook by `jupyter-notebook`  
+
 ## Tutorial Scripts
 
-{% capture text %}
 Here, we provide two files two help you with the tasks.
 1. Tutorial to reconstruct droshophila embryo.
 2. A generic reconstruction Python script.
 
-{% endcapture %}
-{% include card.html text=text header="Tutorial Scripts" %}
-
-
-{% include button.html text="Tutorial Files" link="files/tutorial_code.zip" color="info" %}
-
-## How to use Jupyter Notebook
-
+{% include button.html text="Download Tutorial Files" link="files/tutorial_code.zip" color="info" %}

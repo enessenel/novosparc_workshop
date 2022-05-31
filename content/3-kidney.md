@@ -90,3 +90,10 @@ For a fixed target space perform 5 reconstructions with different number of cell
 
 ## Task 3: explore different target spaces
 Setup different target spaces and explore the reconstructions. How are these affected from the shape of the target space? How robust are the reconstructions?
+
+## Kidney compartments as a references and some genes to check
+
+[Nphs1, Nrp1, Slc27a2, Umod, Pvalb, Aqp2]
+
+{% include figure.html img="kidney_compartments.png" alt="Kidney Compartments and Some Genes" caption="Kidney Compartments and Some Genes" width="100%" %}
+
