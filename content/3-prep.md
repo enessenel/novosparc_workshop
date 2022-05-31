@@ -23,7 +23,16 @@ After having installed `conda`, create a new environment by typing `conda create
 
 ## Tutorial Scripts
 
-{% include button.html text="Tutorial Files" link="files/tutorial_code.csv" color="info" %}
+{% capture text %}
+Here, we provide two files two help you with the tasks.
+1. Tutorial to reconstruct droshophila embryo.
+2. A generic reconstruction Python script.
 
-{% include button.html text="novoSpaRc Github Repository" link="https://github.com/rajewsky-lab/novosparc" color="info" %}
+{% endcapture %}
+{% include card.html text=text header="Tutorial Scripts" %}
+
+
+{% include button.html text="Tutorial Files" link="files/tutorial_code.zip" color="info" %}
+
+## How to use Jupyter Notebook
 
