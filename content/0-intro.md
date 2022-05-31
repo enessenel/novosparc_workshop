@@ -8,7 +8,7 @@ topics: novoSpaRc; Theory
 Single-cell RNA-sequencing (scRNA-seq) technologies have revolutionized modern biomedical sciences. A fundamental challenge is to incorporate spatial information to study tissue organization and spatial gene expression patterns. 
 novoSpaRc, a computational framework that probabilistically assigns cells to tissue locations by using the structural correspondence hypothesis, that cells in physical proximity share similar gene expression profiles. Given scRNA-seq data, novoSpaRc spatially reconstructs tissues based on this hypothesis, and optionally, by including a reference atlas of marker genes to improve reconstruction. 
 
-{% include figure.html img="novosparcflow.png" alt="novoSpaRc Flowchart" caption="novoSpaRc Flowchart" width="75%" %}
+{% include figure.html img="novosparcflow.png" alt="novoSpaRc Flowchart" caption="novoSpaRc Flowchart" width="100%" %}
 
 ## General Usage of novoSpaRc
 
