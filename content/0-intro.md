@@ -40,19 +40,13 @@ To spatially reconstruct gene expression, novoSpaRc performs the following steps
 
 ## Publications
 
-{% capture text %}
-    Gene Expression Cartography
-    M Nitzan*, N Karaiskos*, N Friedman†, N Rajewsky†
-    [Nature](https://www.nature.com/articles/s41586-019-1773-3) (2019)
-{% endcapture %}
-{% include card.html header="novoSpaRc Paper" text=text %}
+Gene Expression Cartography
+M Nitzan*, N Karaiskos*, N Friedman†, N Rajewsky†
+[Nature](https://www.nature.com/articles/s41586-019-1773-3) (2019)
 
-{% capture text %}
-    novoSpaRc: flexible spatial reconstruction of single-cell gene expression with optimal transport
-    N Moriel*, E Senel*, N Friedman, N Rajewsky, N Karaiskos†, M Nitzan†
-    [Nature Protocols](https://www.nature.com/articles/s41596-021-00573-7) (2021)
-{% endcapture %}
-{% include card.html header="novoSpaRc Protocol" text=text %}
+novoSpaRc: flexible spatial reconstruction of single-cell gene expression with optimal transport
+N Moriel*, E Senel*, N Friedman, N Rajewsky, N Karaiskos†, M Nitzan†
+[Nature Protocols](https://www.nature.com/articles/s41596-021-00573-7) (2021)
 
 
 
