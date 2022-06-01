@@ -9,12 +9,14 @@ Here, we will use novoSpaRc to spatially reconstruct the early Drosophila embryo
 ## The Data
 
 {% capture text %} You can download the data from the following link:
-[BDTNP Dataset](https://gigamove.rwth-aachen.de/en/download/7a1829c1a7eb0a11b8d78075ccd12bbf)
+[BDTNP Dataset and the Jupyter Notebook](https://gigamove.rwth-aachen.de/en/download/3d9ffff210f632453b6d24fd1f74bab3)
 {% endcapture %}
 {% include card.html header="Data Download" text=text %}
 
 {% capture text %}
-The dataset consists of three files:
+You can use "dataset2_bdtnp.ipynb" as a starter.
+
+The dataset consists of two files:
 - dge.txt => this is the digital gene expression file
 - geometry.txt => location coordinates
 {% endcapture %}
