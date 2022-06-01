@@ -19,14 +19,14 @@ Conda is a python package manager that facilitates reproducibility of data analy
 
 ## Create a new environment and install novoSpaRc
 
-After having installed `conda`, create a new environment by typing `conda create -n novosparc python=3.9`. Then activate the environment with `conda activate novosparc` and try to install `novosparc` from `pip` by typing `pip install novosparc`. This should install the packages and all dependencies.
+After having installed `conda`, create a new environment by typing `conda create -n novosparc python=3.9`. Then activate the environment with `conda activate novosparc` and try to install `novosparc` from `pip` by typing `pip install novosparc==0.4.4`. This should install the packages and all dependencies.
 
 ## Install Jupyter
 `conda install -c anaconda jupyter` and you can start the notebook by `jupyter-notebook`  
 
 ## Tutorial Scripts
 
-Here, we provide two files two help you with the tasks.
+Here, we provide two files two help you with the tasks if you want a cheat sheet.
 1. Tutorial to reconstruct droshophila embryo.
 2. A generic reconstruction Python script.
 
