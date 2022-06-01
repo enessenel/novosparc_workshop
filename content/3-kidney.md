@@ -12,7 +12,7 @@ Here, we will use novoSpaRc to spatially reconstruct a single-cell dataset from 
 ## The Data
 
 {% capture text %} You can download the data from the following link:
-[Download Kidney Dataset](https://gigamove.rwth-aachen.de/en/download/60d8b33b09c0cc4da07783830380771d)
+[Download Kidney Dataset and the Jupyter Notebook](https://gigamove.rwth-aachen.de/en/download/c44d5a544d3d4bacb8fe3e91bc2139fc)
 {% endcapture %}
 {% include card.html header="Data Download" text=text %}
 
@@ -93,7 +93,7 @@ Setup different target spaces and explore the reconstructions. How are these aff
 
 ## Kidney compartments as a references and some genes to check
 
-[Nphs1, Nrp1, Slc27a2, Umod, Pvalb, Aqp2]
+['Nphs1', 'Nrp1', 'Slc27a2', 'Umod', 'Pvalb', 'Aqp2']
 
 {% include figure.html img="kidney_compartments.png" alt="Kidney Compartments and Some Genes" caption="Kidney Compartments and Some Genes" width="100%" %}
 
