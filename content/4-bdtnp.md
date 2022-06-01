@@ -26,21 +26,6 @@ The dataset consists of two files:
 
 Import the required libraries
 
-```
-# imports
-%matplotlib inline
-import novosparc
-
-import os
-import numpy as np
-import pandas as pd
-import random
-import scanpy as sc
-import matplotlib.pyplot as plt
-import altair as alt
-from scipy.spatial.distance import cdist, squareform, pdist
-```
-
 ### Reading gene expression data
 ```
 Read the single-cell gene expression matrix and the list of gene names from disk.
