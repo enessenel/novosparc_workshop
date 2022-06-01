@@ -12,15 +12,18 @@ Here, we will use novoSpaRc to spatially reconstruct a single-cell dataset from 
 ## The Data
 
 {% capture text %} You can download the data from the following link:
-[Download Kidney Dataset and the Jupyter Notebook](https://gigamove.rwth-aachen.de/en/download/c44d5a544d3d4bacb8fe3e91bc2139fc)
+[Download Kidney Dataset and the Jupyter Notebook](https://gigamove.rwth-aachen.de/en/download/6e23317c00cd565de16a6c61af0cbc7a)
 {% endcapture %}
 {% include card.html header="Data Download" text=text %}
 
 {% capture text %}
-The dataset consists of three files:
+You can use "dataset1_kidney.ipynb" as a starter.
+
+The dataset consists of four data files:
 - dge_normalized.txt => this is the digital gene expression file
 - gene_names.txt => names of the genes
 - hvg_839.txt => names of the highly variable genes that can be used in the processing
+- thailand.txt => the map of thailand to be used as locations
 {% endcapture %}
 {% include card.html header="Data Description" text=text %}
 
@@ -70,14 +73,14 @@ Subset target space to 2,000 locations
 
 #### Alternatively (for task 3): create a new target space
 ```
-Use the provided script to generate a target space of any country
+Explore novoSpaRc functions to generate another target space
 ```
 
 ### Reconstruct the tissue
 ```
 Construct Tissue object
 Compute cost matrices
-Compute OT of cells to locations for alpha=0
+Compute OT of cells to locations for de novo reconstruction
 ```
 
 ### Validate reconstruction for different kidney compartments
@@ -93,7 +96,7 @@ Setup different target spaces and explore the reconstructions. How are these aff
 
 ## Kidney compartments as a references and some genes to check
 
-['Nphs1', 'Nrp1', 'Slc27a2', 'Umod', 'Pvalb', 'Aqp2']
+You can visualise these genes: ['Nphs1', 'Nrp1', 'Slc12a1', 'Umod', 'Pvalb', 'Aqp2']
 
 {% include figure.html img="kidney_compartments.png" alt="Kidney Compartments and Some Genes" caption="Kidney Compartments and Some Genes" width="100%" %}
 

@@ -4,10 +4,7 @@ nav: BDTNP
 topics: Drosophila, Reconstruction, atlas
 ---
 
-Here, we will use novoSpaRc to spatially reconstruct the early Drdosophila embryo dataset [1], which is a whole organism tissue with stereotypical organization. Since a reference atlas of gene expression is provided, the reconstruction will performed with marker genes. 
-
-{% capture text %} [1] Park, J. et al. Single-cell transcriptomics of the mouse kidney reveals potential cellular targets of kidney disease. Science 360, 758–763 (2018). {% endcapture %}
-{% include card.html header="Original Publication" text=text %}
+Here, we will use novoSpaRc to spatially reconstruct the early Drosophila embryo dataset, which is a whole organism tissue with stereotypical organization. Since a reference atlas of gene expression is provided, the reconstruction will performed with marker genes. 
 
 ## The Data
 
