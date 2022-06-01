@@ -9,7 +9,7 @@ Here, we will use novoSpaRc to spatially reconstruct the early Drosophila embryo
 ## The Data
 
 {% capture text %} You can download the data from the following link:
-[BDTNP Dataset and the Jupyter Notebook](https://gigamove.rwth-aachen.de/en/download/f2c266d9bb9e7335e1ab471500320f6b)
+[BDTNP Dataset and Jupyter Notebook](https://gigamove.rwth-aachen.de/en/download/f2c266d9bb9e7335e1ab471500320f6b)
 {% endcapture %}
 {% include card.html header="Data Download" text=text %}
 
